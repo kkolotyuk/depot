@@ -1,6 +1,8 @@
 - if notice
   p#notice = notice
 h1 Your Pragmatic Catalog
+- if session[:counter] > 5
+  p You've been here #{pluralize(session[:counter], "time")}
 - @products.each do |product|
   .entry
     = image_tag product.image_url

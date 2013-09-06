@@ -5,8 +5,8 @@ gem 'rails', '3.2.14'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem "mysql2", "~> 0.3.13"
-gem 'slim-rails', "~> 2.0.1"
+gem 'mysql2', '~> 0.3.13'
+gem 'slim-rails', '~> 2.0.1'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -21,6 +21,9 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+gem 'thin', '~> 1.5.1'
+gem 'quiet_assets', '~> 1.0.2'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
