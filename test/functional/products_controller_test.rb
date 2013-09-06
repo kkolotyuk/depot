@@ -53,4 +53,11 @@ class ProductsControllerTest < ActionController::TestCase
 
     assert_redirected_to products_path
   end
+
+  test "tr_cycling test" do
+    get :index
+    assert_response :success
+    assert_select 'tr.list_line_odd', minimum: 1
+    assert_select 'tr.list_line_even', minimum: 1
+  end
 end
