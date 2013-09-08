@@ -11,6 +11,8 @@ html
       = @page_title || "Pragmatic Bookshelf"
     #columns
       #side
+        #cart
+          == render @cart
         ul
           li: a href="#" Home
           li: a href="#" Questions
