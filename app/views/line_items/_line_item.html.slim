@@ -1,4 +1,4 @@
-tr
+tr id=(line_item == @line_item ? 'current_item' : '')
   td #{line_item.quantity}&times;
   td = line_item.product.title
   td.line_item_price = number_to_currency line_item.total_price

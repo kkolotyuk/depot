@@ -21,6 +21,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem "jquery-ui-rails"
 
 gem 'thin', '~> 1.5.1'
 gem 'quiet_assets', '~> 1.0.2'
